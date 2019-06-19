@@ -1,0 +1,57 @@
+@charset 'UTF-8';
+@import 'mixins';
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #f5f4f6;
+	font-family: 'Lato', sans-serif;
+}
+
+.mark {
+	cursor: pointer;
+}
+
+.block {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	&.active {
+		p {
+			color: #b5b5b5;
+
+			&::before {
+				width: 104%;
+			}
+		}
+	}
+
+	p {
+		font-size: 40px;
+		font-weight: 400;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color: #464646;
+		margin-right: 30px;
+		position: relative;
+		transition: all .2s ease-in-out;
+		user-select: none;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: -5px;
+			top: 25px;
+			width: 0%;
+			height: 5px;
+			background: #85e288;
+			border-radius: 10px;
+			transition: all .2s ease-in-out;
+		}
+	}
+}
