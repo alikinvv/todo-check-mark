@@ -39,7 +39,7 @@ body {
 		color: #464646;
 		margin-right: 30px;
 		position: relative;
-		transition: all .2s ease-in-out;
+		transition: all .3s ease-in-out;
 		user-select: none;
 
 		&::before {
@@ -51,7 +51,7 @@ body {
 			height: 5px;
 			background: #85e288;
 			border-radius: 10px;
-			transition: all .2s ease-in-out;
+			transition: all .3s ease-in-out;
 		}
 	}
 }

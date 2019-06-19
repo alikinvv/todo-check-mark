@@ -73,8 +73,8 @@ $('body').on('click', '.block:not(.active)', (e) => {
         $(e.currentTarget).addClass('active');
         setTimeout(() => {
             round.color = '#a2f1a5';
-        },100);
-        rotateShape.to({ ry: 0 }, 2, {
+        }, 150);
+        rotateShape.to({ ry: 0 }, 3, {
             ry: 180,
             onUpdate: function () {
                 mark.rotate.y = this.target.ry * deg;
@@ -95,8 +95,8 @@ $('body').on('click touchstart', '.block.active', (e) => {
         setTimeout(() => {
             round.color = '#ffaea6';
             cross.color = '#fff';
-        },100);
-        rotateShape.to({ ry: 180 }, 2, {
+        }, 150);
+        rotateShape.to({ ry: 180 }, 3, {
             ry: 0,
             onUpdate: function () {
                 mark.rotate.y = this.target.ry * deg;
